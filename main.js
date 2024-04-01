@@ -17,9 +17,11 @@ function stop() {
   clearInterval(timer);
   isRunning = false;
 }
+
 function formatTime(time) {
   return time < 10 ? "0" + time : time;
 }
+
 function reset() {
   clearInterval(timer);
   display.innerText = "00:00:00";
